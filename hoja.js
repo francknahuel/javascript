@@ -1,17 +1,15 @@
 // Función para calcular el costo de construcción
 function calcularCostoConstruccion() {
-        const costoPorMetroCuadrado = 1000; // Costo estimado por metro cuadrado (ajusta según tu contexto)
+        const costoPorMetroCuadrado = 1213; 
     
-        // Solicitamos al usuario los metros cuadrados de la casa
-        const metrosCuadrados = parseFloat(prompt("Ingresa los metros cuadrados de la casa:"));
+        
+        const metrosCuadrados = parseFloat(prompt("Ingresa los metros cuadrados a construir de la casa:"));
     
-        // Validamos que el usuario haya ingresado un número válido
+        
         if (!isNaN(metrosCuadrados) && metrosCuadrados > 0) {
-            // Calculamos el costo total
+
             const costoTotal = costoPorMetroCuadrado * metrosCuadrados;
-    
-            // Mostramos el resultado
-            alert(`El costo estimado de construir una casa de ${metrosCuadrados} metros cuadrados es: $${costoTotal.toFixed(2)}`);
+            alert(`El costo estimado de construir una casa de ${metrosCuadrados} metros cuadrados es: $${costoTotal.toFixed(2)} dolares`);
         } else {
             alert("Por favor, ingresa una cantidad válida de metros cuadrados.");
         }
